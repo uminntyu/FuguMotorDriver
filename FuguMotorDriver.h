@@ -17,13 +17,13 @@ private:
 
     int ch;
 
-    void cw( byte speed );
-    void ccw( byte speed );
-    void stop();
+    void cw( int speed );
+    void ccw( int speed );
+    //void stop();
 
 public:
     FuguMotorDriver( int ch );
-    void move( byte speed );
+    void move( int speed );
     void stop();
 
-}
+};
