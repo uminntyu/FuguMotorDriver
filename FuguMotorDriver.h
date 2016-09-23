@@ -22,7 +22,7 @@ private:
     //void stop();
 
 public:
-    FuguMotorDriver( int ch );
+    FuguMotorDriver( HardwareSerial *hardwareSerial, int ch );
     void move( int speed );
     void stop();
 
