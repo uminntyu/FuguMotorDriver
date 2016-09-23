@@ -21,6 +21,8 @@ private:
     void ccw( int speed );
     //void stop();
 
+    HardwareSerial serial;
+
 public:
     FuguMotorDriver( HardwareSerial *hardwareSerial, int ch );
     void move( int speed );

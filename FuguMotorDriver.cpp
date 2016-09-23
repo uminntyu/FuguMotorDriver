@@ -1,11 +1,11 @@
 
 #include "FuguMotorDriver.h"
 
-
-FuguMotorDriver::FuguMotorDriver( int ch )
+FuguMotorDriver( HardwareSerial *hardwareSerial, int ch )
 {
     FuguMotorDriver::ch = ch;
-    Serial1.begin(115200);
+    serial = hardwareSerial;
+    serial.begin( 115200 );
 }
 
 void FuguMotorDriver::move(int speed)
